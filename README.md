@@ -1,6 +1,6 @@
 # Redux-Toolkit Shopping Cart
 
-[See Demo](https://alexsmik.github.io/redux-toolkit-shopping-cart)
+[See Demo](https://alexsmik.github.io/products)
 
 #### Install Shopping Cart Project
 
