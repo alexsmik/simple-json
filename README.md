@@ -18,4 +18,4 @@ npm install
 
 #### Support
 
-Find the App Useful? [You can contact me](https://alexsmik.github.io/contact)
+Find the App Useful? [You can contact me](https://alexsmik.github.io)
