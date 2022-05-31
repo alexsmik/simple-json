@@ -1,39 +1,37 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   items: [],
   status: null,
 };
 
-export const productsFetch = createAsyncThunk( // this duplicate link to json products file
-  "products/productsFetch",
+export const productsFetch = createAsyncThunk(
+  'products/productsFetch',
   async () => {
     try {
-      const response = await axios.get(
-        ""
-      );
+      const response = await axios.get('');
       return response.data;
     } catch (error) {
-      console.log("response err",error);
+      console.log('response err', error);
     }
   }
 );
 
 const productsSlice = createSlice({
-  name: "products",
+  name: 'products',
   initialState,
   reducers: {},
   extraReducers: {
     [productsFetch.pending]: (state, action) => {
-      state.status = "pending";
+      state.status = 'pending';
     },
     [productsFetch.fulfilled]: (state, action) => {
       state.items = action.payload;
-      state.status = "success";
+      state.status = 'success';
     },
     [productsFetch.rejected]: (state, action) => {
-      state.status = "rejected";
+      state.status = 'rejected';
     },
   },
 });

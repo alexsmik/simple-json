@@ -3,12 +3,10 @@
 ::before {
   box-sizing: border-box;
 }
-/* fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap"); */
 
 html {
   font-size: 100%;
-} /*16px*/
+}
 
 body {
   background: var(--backgroundColor);

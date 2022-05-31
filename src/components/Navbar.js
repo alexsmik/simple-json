@@ -21,10 +21,9 @@ const Navbar = () => {
     </nav>
   );
 };
-export default Navbar;
-
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
 `;
+export default Navbar;
