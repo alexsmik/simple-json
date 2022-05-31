@@ -12,10 +12,6 @@ npm install
 
 [Redux Toolkit Docs](https://redux-toolkit.js.org/introduction/getting-started)
 
-#### React Course
-
-[My Projects](https://alexsmik.github.io/)
-
 #### Support
 
-Find the App Useful? [You can contact me](https://alexsmik.github.io)
+Find the App Useful? [Contact](https://alexsmik.github.io)
