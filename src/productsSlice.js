@@ -6,12 +6,12 @@ const initialState = {
   status: null,
 };
 
-export const productsFetch = createAsyncThunk(
+export const productsFetch = createAsyncThunk( // this duplicate link to json products file
   "products/productsFetch",
   async () => {
     try {
       const response = await axios.get(
-        "http://kbab.ru/products/products.json"
+        ""
       );
       return response.data;
     } catch (error) {

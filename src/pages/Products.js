@@ -1,21 +1,23 @@
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../cartSlice";
 import { useGetAllProductsQuery } from "../productsApi";
+import {useNavigate} from "react-router-dom";
+import styled from "styled-components";
 
 const Products = () => {
   const { items: products, status } = useSelector((state) => state.products);
   const dispatch = useDispatch();
-
+  const history = useNavigate();
   const { data, error, isLoading } = useGetAllProductsQuery();
   console.log("Api", isLoading);
-
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
+      history('/cart')
   };
 
   return (
-      <section className='section'>
-      <div className="home-container">
+      <Wrapper>
+      <div className="products-container">
         {status === "success" ? (
               <div className="products">
                 {data &&
@@ -36,11 +38,29 @@ const Products = () => {
         ) : status === "pending" ? (
           <p>Loading...</p>
           ) : (
-          <p>Unexpected error occured...</p>
+          <p>Unexpected error... {error}</p>
           )}
       </div>
-      </section>
+      </Wrapper>
   );
 };
-
+const Wrapper = styled.section`
+  img {
+    height: 175px;
+  }
+  .product-container {
+    display: grid;
+    gap: 2rem 1.5rem;
+  }
+  @media (min-width: 992px) {
+    .products-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1170px) {
+    .products-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+`
 export default Products;
