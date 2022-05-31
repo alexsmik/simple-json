@@ -2,7 +2,7 @@
   "name": "Shopping Cart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexsmik.github.io/redux-toolkit-shopping-cart",
+  "homepage": "https://alexsmik.github.io/redux-toolkit-shopping-cart/",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
