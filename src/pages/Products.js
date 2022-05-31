@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart } from '../cartSlice';
-import { useGetAllProductsQuery } from '../productsApi';
+import { addToCart } from '../store/cartSlice';
+import { useGetAllProductsQuery } from '../store/productsApi';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 

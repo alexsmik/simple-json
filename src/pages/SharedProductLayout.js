@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 // why this? Outlet
 // An <Outlet> should be used in parent route elements to render their child route elements.
