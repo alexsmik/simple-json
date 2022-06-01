@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://alexsmik.github.io/redux-toolkit-shopping-cart/",
   "dependencies": {
+    "-": "^0.0.1",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@reduxjs/toolkit": "^1.8.2",
@@ -11,11 +12,13 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "save-dev": "^0.0.1-security",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },

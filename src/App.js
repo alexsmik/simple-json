@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About';
 import Products from './pages/Products';
@@ -6,7 +7,6 @@ import SharedLayout from './pages/SharedLayout';
 import ProtectedRoute from './pages/ProtectedRoute';
 import SharedProductLayout from './pages/SharedProductLayout';
 import Cart from './pages/Cart';
-import React from 'react';
 
 function App() {
   return (
