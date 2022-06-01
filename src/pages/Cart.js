@@ -37,7 +37,7 @@ const Cart = () => {
         <div className="cart-empty">
           <p>Your cart is currently empty</p>
           <div className="start-shopping">
-            <Link to="/">
+            <Link to="/redux-toolkit-shopping-cart/products">
               <span>Start Shopping</span>
             </Link>
           </div>
@@ -92,7 +92,7 @@ const Cart = () => {
                 <span className="amount">${cart.cartTotalAmount}</span>
               </div>
               <div className="continue-shopping">
-                <Link to="/">
+                <Link to="/redux-toolkit-shopping-cart/products">
                   <span>Continue Shopping</span>
                 </Link>
               </div>

@@ -9,9 +9,9 @@ const Navbar = () => {
   const { cartTotalQuantity } = useSelector((state) => state.cart);
   return (
     <nav className="navbar">
-      <Link to="/">About</Link>
-      <Link to="/products">Products</Link>
-      <Link to="/cart">
+      <Link to="/redux-toolkit-shopping-cart/">About</Link>
+      <Link to="/redux-toolkit-shopping-cart/products">Products</Link>
+      <Link to="/redux-toolkit-shopping-cart/cart">
         <MenuItem>
           <Badge badgeContent={cartTotalQuantity} color="primary">
             <ShoppingCartOutlined />

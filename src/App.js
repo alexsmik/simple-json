@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SharedLayout />}>
+        <Route path="/redux-toolkit-shopping-cart/" element={<SharedLayout />}>
           <Route index element={<About />} />
           <Route path="cart" element={<Cart />} />
           <Route path="products" element={<SharedProductLayout />}>

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="section">
       <h2>Shopping Cart for eCommerce App</h2>
-      <Link to="/products" className="btn">
+      <Link to="/redux-toolkit-shopping-cart/products" className="btn">
         Start shopping!
       </Link>
     </section>

@@ -12,7 +12,7 @@ const Products = () => {
   console.log('Api', isLoading);
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
-    history('/cart');
+    history('/redux-toolkit-shopping-cart/cart');
   };
 
   return (

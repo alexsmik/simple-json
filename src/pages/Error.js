@@ -5,7 +5,9 @@ const Error = () => {
     <section className="section">
       <h2>404</h2>
       <p>page not found</p>
-      <Link to="/">Go to About page</Link>
+      <Link to="/redux-toolkit-shopping-cart/products">
+        Go to Products page
+      </Link>
     </section>
   );
 };
