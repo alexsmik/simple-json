@@ -2,7 +2,7 @@
 
 [See Demo](https://alexsmik.github.io/redux-toolkit-shopping-cart/)
 
-#### Install Shopping Cart Project
+#### Install Project
 
 ```sh
 npm install
